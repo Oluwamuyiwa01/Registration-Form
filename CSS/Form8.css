@@ -1,0 +1,156 @@
+*{
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+    font-family: sans-serif;
+}
+
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background:url("/IMG/scenic-view-of-mountain-1666021.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.container{
+    width:100%;
+    max-width:650px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding:29px;
+    margin: 0 28px;
+    border-radius: 10px;
+    box-shadow: inset -2px 2px 2px white ;
+}
+.form-title{
+    font-size: 26px;
+    font-weight: 600;
+    text-align: center;
+    padding-bottom:7px;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    border-bottom: 1px solid white;
+}
+
+.main-user-infor{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    padding:29px 0;
+}
+.user-input-box:nth-child(2n){
+    justify-content:flex-end;
+}
+.user-input-box{
+    display: flex;
+    flex-wrap: wrap;
+    width:50%;
+    padding-bottom:15px;
+}
+.user-input-box label{
+    width:95%;
+    color: white;
+    font-size: 20px;
+    margin:5px 0;
+}
+
+.user-input-box input{
+    height:40px;
+    width:95%;
+    border-radius:7px;
+    outline:none;
+    border:1px solid gray;
+    padding: 0 10px;
+}
+
+.gender-title{
+    color: white;
+    font-size:24px;
+    font-weight:600;
+    border-bottom:1px solid white ;
+}
+.gender-category{
+    margin:10px 0;
+    color: white;
+}
+
+.gender-category label{
+    padding: 0 20px 0px 5px;
+
+}
+
+.gender-category input:checked + label{
+    font-size:x-large;
+    /* color:blue; */
+}
+
+
+.gender-category label,
+.gender-category input,
+.Form-submit-btn input{
+
+    cursor: pointer;
+}
+
+.Form-submit-btn{
+    margin-top: 40px;
+}
+
+.Form-submit-btn input{
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    font-size: 20px;
+    padding: 10px;
+    border: none;
+    border-radius:5px;
+    color: rgb(250, 246, 246);
+    background-color:rgba(36, 34, 173, 0.7) ;
+}
+
+.Form-submit-btn input:hover{
+    background-color: rgba(49, 6, 245, 1);
+    color: #ffffff;
+}
+
+
+@media screen  and (max-width:600px){
+    .container{
+        min-width:280px;
+    }
+    .user-input-box{
+        margin-bottom: 12px;
+        width: 100%;
+    }
+
+    .user-input-box:nth-child(2n){
+        justify-content: space-around;
+    }
+    .gender-category{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .main-user-infor{
+        max-height: 390px;
+        overflow: auto;
+    }
+    
+     .main-user-infor::-webkit-scrollbar{
+        width: 0; 
+    }
+}
+
+@media screen  and (max-width:573px){
+    .Form-submit-btn input{
+        background-color:rgba(22, 201, 22, 0.5)
+    }
+    
+    .Form-submit-btn input:hover{
+        background-color: green;
+    }
+
+}
+
