@@ -10,7 +10,7 @@ body{
     height: 100vh;
     justify-content: center;
     align-items: center;
-    background:url("/IMG/scenic-view-of-mountain-1666021.jpg");
+    /* background:url("/IMG/scenic-view-of-mountain-1666021.jpg"); */
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
